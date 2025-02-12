@@ -94,6 +94,20 @@ will save the results in ```record/badnet_demo/defense/ft/demo/ ```
 
 ---
 
+
+## 📋 TODO
+
+📅 **Upcoming Features:**
+
+1. **Release Code for Generating Synthetic Data**: We will soon provide code to generate synthetic auxiliary datasets, expanding the variety of datasets available for testing and evaluation.
+   
+2. **Release Dataset**: In addition to the code, we plan to release a curated dataset specifically designed for backdoor purification research.
+
+Stay tuned for updates!
+
+---
+
+
 ## 📄 Citation
 
 Please cite our work if used in your research:
@@ -127,4 +141,6 @@ Our work is built upon previous works, including but not limited to:
 ## 📞 Contact
 
 For inquiries or feedback, open an issue or email `shaokuiwei@link.cuhk.edu.cn`.
+
+
 
