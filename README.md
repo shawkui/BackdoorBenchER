@@ -103,6 +103,10 @@ will save the results in ```record/badnet_demo/defense/ft/demo/ ```
    
 2. **Release Dataset**: In addition to the code, we plan to release a curated dataset specifically designed for backdoor purification research.
 
+3. **Release Guided Input Calibration**: We plan to release Guided Input Calibration, the first attempt to align auxiliary datasets with in-distribution datasets, facilitating more effective backdoor purification.
+
+4. **More evaluation**: Our long-term updates will include a broader evaluation framework, incorporating additional purification techniques, models, and tasks. Contributions from the research community are highly encouraged.
+
 Stay tuned for updates!
 
 ---
