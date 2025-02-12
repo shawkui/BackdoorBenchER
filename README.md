@@ -8,7 +8,7 @@
 
 ## 📢 Announcements
 
-**Updated on 2025-02-12**: Initial release now available. Supports evaluation of backdoor purification on auxiliary datasets categorized as Seen (Train), Reserved (Split), and OOD (Transformations).
+**Updated on 2025-02-12**: Initial release now available. Supports evaluation of backdoor purification on auxiliary datasets categorized as Seen (Train), Reserved (Split), and OOD (Transformations & External from ImageNet).
 
 ---
 
