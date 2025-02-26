@@ -35,9 +35,9 @@ def create_directory_structure(base_path, split_ratio, args):
     """Create necessary directories for the dataset split."""
     paths = [base_path, f"{base_path}/train", f"{base_path}/test", f"{base_path}/reserved"]
     for i in range(args.num_classes):
-        paths.append(f"{base_path}/train/{args.label_format.format(i)}")
-        paths.append(f"{base_path}/test/{args.label_format.format(i)}")
-        paths.append(f"{base_path}/reserved/{args.label_format.format(i)}")
+        paths.append(f"{base_path}/train/{str(i).zfill(5)}")
+        paths.append(f"{base_path}/test/{str(i).zfill(5)}")
+        paths.append(f"{base_path}/reserved/{str(i).zfill(5)}")
     for path in paths:
         if not os.path.exists(path):
             os.makedirs(path)
@@ -46,13 +46,13 @@ def save_images(dataset, indices, base_path, split_type, args):
     """Save images from the dataset to the specified path with the given split type."""
     for i, idx in enumerate(indices):
         img, label = dataset[idx]
-        img.save(f"{base_path}/{split_type}/{args.label_format.format(label)}/{args.file_format.format(i)}.png")
+        img.save(f"{base_path}/{split_type}/{str(label).zfill(5)}/{str(i).zfill(5)}.png")
 
 
 def save_image(dataset, i, idx, base_path, split_type,args):
     """Save a single image from the dataset to the specified path with the given split type."""
     img, label = dataset[idx]
-    img.save(f"{base_path}/{split_type}/{args.label_format.format(label)}/{args.file_format.format(i)}.png")
+    img.save(f"{base_path}/{split_type}/{str(label).zfill(5)}/{str(i).zfill(5)}.png")
     
     
 def save_images_parallel(dataset, indices, base_path, split_type, args, num_workers=8):

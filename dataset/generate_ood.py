@@ -24,33 +24,6 @@ Generate OOD data into
     {args.dataset_path}/{args.dataset}/reserved_ood
 '''
 
-def save_images(dataset, indices, base_path, split_type, args):
-    """Save images from the dataset to the specified path with the given split type."""
-    for idx in indices:
-        img, label = dataset[idx]
-        img.save(f"{base_path}/{split_type}/{label}/{idx}.png")
-
-
-def save_image(dataset, idx, base_path, split_type):
-    """Save a single image from the dataset to the specified path with the given split type."""
-    img, label = dataset[idx]
-    img.save(f"{base_path}/{split_type}/{label}/{idx}.png")
-    
-    
-def save_images_parallel(dataset, indices, base_path, split_type, args, num_workers=8):
-    """Save images from the dataset to the specified path with the given split type using parallel processing."""
-    print(f'Svaing {split_type} data')
-    with ThreadPoolExecutor(max_workers=num_workers) as executor:
-        list(tqdm(executor.map(lambda idx: save_image(dataset, idx, base_path, split_type), indices), total=len(indices)))
-
-
-def write_indices_to_file(indices, dataset, file_path, split_type, args):
-    """Write index, label, and split type to a text file."""
-    with open(file_path, 'w') as f:
-        for idx in indices:
-            _, label = dataset[idx]
-            f.write(f"{idx} {label} {split_type}\n")
-
 def main():
     parser = argparse.ArgumentParser(description=sys.argv[0])
     parser.add_argument('--dataset', type=str, default='cifar10_split_5_seed_0', help='which dataset to use')

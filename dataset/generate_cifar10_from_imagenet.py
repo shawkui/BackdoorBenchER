@@ -27,42 +27,6 @@ Generate OOD data into
 '''
 
 
-def get_padding_width(max_value):
-    if max_value == 0:
-        return 1
-    if ceil(log10(max_value)) == log10(max_value):        
-        return ceil(log10(max_value + 1)) 
-    else:
-        return ceil(log10(max_value))
-
-
-def save_images(dataset, indices, base_path, split_type, args):
-    """Save images from the dataset to the specified path with the given split type."""
-    for idx in indices:
-        img, label = dataset[idx]
-        img.save(f"{base_path}/{split_type}/{label}/{idx}.png")
-
-
-def save_image(dataset, idx, base_path, split_type):
-    """Save a single image from the dataset to the specified path with the given split type."""
-    img, label = dataset[idx]
-    img.save(f"{base_path}/{split_type}/{label}/{idx}.png")
-    
-    
-def save_images_parallel(dataset, indices, base_path, split_type, args, num_workers=8):
-    """Save images from the dataset to the specified path with the given split type using parallel processing."""
-    print(f'Svaing {split_type} data')
-    with ThreadPoolExecutor(max_workers=num_workers) as executor:
-        list(tqdm(executor.map(lambda idx: save_image(dataset, idx, base_path, split_type), indices), total=len(indices)))
-
-
-def write_indices_to_file(indices, dataset, file_path, split_type, args):
-    """Write index, label, and split type to a text file."""
-    with open(file_path, 'w') as f:
-        for idx in indices:
-            _, label = dataset[idx]
-            f.write(f"{idx} {label} {split_type}\n")
-
 def main():
     parser = argparse.ArgumentParser(description=sys.argv[0])
     parser.add_argument('--dataset', type=str, default='cifar10_split_5_seed_0', help='which dataset to use')
@@ -84,19 +48,12 @@ def main():
 
     # define the OOD dataset path
     args.dataset_ood_path = f"{args.dataset_path}/reserved_{args.ood_type}"
-
-    label_format =  f"{{:0{get_padding_width(args.num_classes-1)}d}}"
-    file_format =   f"{{:0{get_padding_width(50000-1)}d}}"
-
-    args.label_format = label_format
-    args.file_format = file_format
-
     
     # Create directory structure
     if not os.path.exists(args.dataset_ood_path):
         os.makedirs(args.dataset_ood_path)
         for i in range(args.num_classes):
-            os.makedirs(f"{args.dataset_ood_path}/{i}")
+            os.makedirs(f"{args.dataset_ood_path}/{str(i).zfill(5)}")
 
     # Extract data    
     idx = 0
@@ -107,8 +64,8 @@ def main():
         random.shuffle(filenames_i)
         filenames_i_select = filenames_i[:args.num_samples_per_class]
         for file_i in filenames_i_select:
-            shutil.copy(file_i, f'{ args.dataset_ood_path}/{args.label_format.format(i)}/{args.file_format[idx]}.png')
-            print(f'{file_i} => {args.dataset_ood_path}/{args.label_format.format(i)}/{args.file_format[idx]}.png')
+            shutil.copy(file_i, f'{ args.dataset_ood_path}/{str(i).zfill(5)}/{str(idx).zfill(5)}.png')
+            print(f'{file_i} => {args.dataset_ood_path}/{str(i).zfill(5)}/{str(idx).zfill(5)}.png')
             idx+=1
             
     print("Done")
