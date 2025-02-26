@@ -8,7 +8,7 @@
 
 ## 📢 Announcements
 
-**Updated on 2025-02-12**: Initial release now available. Supports evaluation of backdoor purification on auxiliary datasets categorized as Seen (Train), Reserved (Split), and OOD (Transformations).
+**Updated on 2025-02-12**: Initial release now available. It supports the evaluation of backdoor purification on auxiliary datasets categorized as Seen (Train), Reserved (Split), and OOD (Transformations & External from ImageNet).
 
 ---
 
@@ -102,6 +102,10 @@ will save the results in ```record/badnet_demo/defense/ft/demo/ ```
 1. **Release Code for Generating Synthetic Data**: We will soon provide code to generate synthetic auxiliary datasets, expanding the variety of datasets available for testing and evaluation.
    
 2. **Release Dataset**: In addition to the code, we plan to release a curated dataset specifically designed for backdoor purification research.
+
+3. **Release Guided Input Calibration**: We plan to release Guided Input Calibration, the first attempt to align auxiliary datasets with in-distribution datasets, facilitating more effective backdoor purification.
+
+4. **More evaluation**: Our long-term updates will include a broader evaluation framework, incorporating additional purification techniques, models, and tasks. Contributions from the research community are highly encouraged.
 
 Stay tuned for updates!
 
