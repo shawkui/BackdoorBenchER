@@ -1,0 +1,200 @@
+0	n01443537	goldfish, Carassius auratus	1
+1	n01629819	European fire salamander, Salamandra salamandra	25
+2	n01641577	bullfrog, Rana catesbeiana	30
+3	n01644900	tailed frog, bell toad, ribbed toad, tailed toad, Ascaphus trui	32
+4	n01698640	American alligator, Alligator mississipiensis	50
+5	n01742172	boa constrictor, Constrictor constrictor	61
+6	n01768244	trilobite	69
+7	n01770393	scorpion	71
+8	n01774384	black widow, Latrodectus mactans	75
+9	n01774750	tarantula	76
+10	n01784675	centipede	79
+11	n01855672	goose	99
+12	n01882714	koala, koala bear, kangaroo bear, native bear, Phascolarctos cinereus	105
+13	n01910747	jellyfish	107
+14	n01917289	brain coral	109
+15	n01944390	snail	113
+16	n01945685	slug	114
+17	n01950731	sea slug, nudibranch	115
+18	n01983481	American lobster, Northern lobster, Maine lobster, Homarus americanus	122
+19	n01984695	spiny lobster, langouste, rock lobster, crawfish, crayfish, sea crawfish	123
+20	n02002724	black stork, Ciconia nigra	128
+21	n02056570	king penguin, Aptenodytes patagonica	145
+22	n02058221	albatross, mollymawk	146
+23	n02074367	dugong, Dugong dugon	149
+24	n02085620	Chihuahua	151
+25	n02094433	Yorkshire terrier	187
+26	n02099601	golden retriever	207
+27	n02099712	Labrador retriever	208
+28	n02106662	German shepherd, German shepherd dog, German police dog, alsatian	235
+29	n02113799	standard poodle	267
+30	n02123045	tabby, tabby cat	281
+31	n02123394	Persian cat	283
+32	n02124075	Egyptian cat	285
+33	n02125311	cougar, puma, catamount, mountain lion, painter, panther, Felis concolor	286
+34	n02129165	lion, king of beasts, Panthera leo	291
+35	n02132136	brown bear, bruin, Ursus arctos	294
+36	n02165456	ladybug, ladybeetle, lady beetle, ladybird, ladybird beetle	301
+37	n02190166	fly	308
+38	n02206856	bee	309
+39	n02226429	grasshopper, hopper	311
+40	n02231487	walking stick, walkingstick, stick insect	313
+41	n02233338	cockroach, roach	314
+42	n02236044	mantis, mantid	315
+43	n02268443	dragonfly, darning needle, devil's darning needle, sewing needle, snake feeder, snake doctor, mosquito hawk, skeeter hawk	319
+44	n02279972	monarch, monarch butterfly, milkweed butterfly, Danaus plexippus	323
+45	n02281406	sulphur butterfly, sulfur butterfly	325
+46	n02321529	sea cucumber, holothurian	329
+47	n02364673	guinea pig, Cavia cobaya	338
+48	n02395406	hog, pig, grunter, squealer, Sus scrofa	341
+49	n02403003	ox	345
+50	n02410509	bison	347
+51	n02415577	bighorn, bighorn sheep, cimarron, Rocky Mountain bighorn, Rocky Mountain sheep, Ovis canadensis	349
+52	n02423022	gazelle	353
+53	n02437312	Arabian camel, dromedary, Camelus dromedarius	354
+54	n02480495	orangutan, orang, orangutang, Pongo pygmaeus	365
+55	n02481823	chimpanzee, chimp, Pan troglodytes	367
+56	n02486410	baboon	372
+57	n02504458	African elephant, Loxodonta africana	386
+58	n02509815	lesser panda, red panda, panda, bear cat, cat bear, Ailurus fulgens	387
+59	n02666196	abacus	398
+60	n02669723	academic gown, academic robe, judge's robe	400
+61	n02699494	altar	406
+62	n02730930	apron	411
+63	n02769748	backpack, back pack, knapsack, packsack, rucksack, haversack	414
+64	n02788148	bannister, banister, balustrade, balusters, handrail	421
+65	n02791270	barbershop	424
+66	n02793495	barn	425
+67	n02795169	barrel, cask	427
+68	n02802426	basketball	430
+69	n02808440	bathtub, bathing tub, bath, tub	435
+70	n02814533	beach wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon	436
+71	n02814860	beacon, lighthouse, beacon light, pharos	437
+72	n02815834	beaker	438
+73	n02823428	beer bottle	440
+74	n02837789	bikini, two-piece	445
+75	n02841315	binoculars, field glasses, opera glasses	447
+76	n02843684	birdhouse	448
+77	n02883205	bow tie, bow-tie, bowtie	457
+78	n02892201	brass, memorial tablet, plaque	458
+79	n02906734	broom	462
+80	n02909870	bucket, pail	463
+81	n02917067	bullet train, bullet	466
+82	n02927161	butcher shop, meat market	467
+83	n02948072	candle, taper, wax light	470
+84	n02950826	cannon	471
+85	n02963159	cardigan	474
+86	n02977058	cash machine, cash dispenser, automated teller machine, automatic teller machine, automated teller, automatic teller, ATM	480
+87	n02988304	CD player	485
+88	n02999410	chain	488
+89	n03014705	chest	492
+90	n03026506	Christmas stocking	496
+91	n03042490	cliff dwelling	500
+92	n03085013	computer keyboard, keypad	508
+93	n03089624	confectionery, confectionary, candy store	509
+94	n03100240	convertible	511
+95	n03126707	crane	517
+96	n03160309	dam, dike, dyke	525
+97	n03179701	desk	526
+98	n03201208	dining table, board	532
+99	n03250847	drumstick	542
+100	n03255030	dumbbell	543
+101	n03355925	flagpole, flagstaff	557
+102	n03388043	fountain	562
+103	n03393912	freight car	565
+104	n03400231	frying pan, frypan, skillet	567
+105	n03404251	fur coat	568
+106	n03424325	gasmask, respirator, gas helmet	570
+107	n03444034	go-kart	573
+108	n03447447	gondola	576
+109	n03544143	hourglass	604
+110	n03584254	iPod	605
+111	n03599486	jinrikisha, ricksha, rickshaw	612
+112	n03617480	kimono	614
+113	n03637318	lampshade, lamp shade	619
+114	n03649909	lawn mower, mower	621
+115	n03662601	lifeboat	625
+116	n03670208	limousine, limo	627
+117	n03706229	magnetic compass	635
+118	n03733131	maypole	645
+119	n03763968	military uniform	652
+120	n03770439	miniskirt, mini	655
+121	n03796401	moving van	675
+122	n03804744	nail	677
+123	n03814639	neck brace	678
+124	n03837869	obelisk	682
+125	n03838899	oboe, hautboy, hautbois	683
+126	n03854065	organ, pipe organ	687
+127	n03891332	parking meter	704
+128	n03902125	pay-phone, pay-station	707
+129	n03930313	picket fence, paling	716
+130	n03937543	pill bottle	720
+131	n03970156	plunger, plumber's helper	731
+132	n03976657	pole	733
+133	n03977966	police van, police wagon, paddy wagon, patrol wagon, wagon, black Maria	734
+134	n03980874	poncho	735
+135	n03983396	pop bottle, soda bottle	737
+136	n03992509	potter's wheel	739
+137	n04008634	projectile, missile	744
+138	n04023962	punching bag, punch bag, punching ball, punchball	747
+139	n04067472	reel	758
+140	n04070727	refrigerator, icebox	760
+141	n04074963	remote control, remote	761
+142	n04099969	rocking chair, rocker	765
+143	n04118538	rugby ball	768
+144	n04133789	sandal	774
+145	n04146614	school bus	779
+146	n04149813	scoreboard	781
+147	n04179913	sewing machine	786
+148	n04251144	snorkel	801
+149	n04254777	sock	806
+150	n04259630	sombrero	808
+151	n04265275	space heater	811
+152	n04275548	spider web, spider's web	815
+153	n04285008	sports car, sport car	817
+154	n04311004	steel arch bridge	821
+155	n04328186	stopwatch, stop watch	826
+156	n04356056	sunglasses, dark glasses, shades	837
+157	n04366367	suspension bridge	839
+158	n04371430	swimming trunks, bathing trunks	842
+159	n04376876	syringe	845
+160	n04398044	teapot	849
+161	n04399382	teddy, teddy bear	850
+162	n04417672	thatch, thatched roof	853
+163	n04456115	torch	862
+164	n04465501	tractor	866
+165	n04486054	triumphal arch	873
+166	n04487081	trolleybus, trolley coach, trackless trolley	874
+167	n04501370	turnstile	877
+168	n04507155	umbrella	879
+169	n04532106	vestment	887
+170	n04532670	viaduct	888
+171	n04540053	volleyball	890
+172	n04560804	water jug	899
+173	n04562935	water tower	900
+174	n04596742	wok	909
+175	n04597913	wooden spoon	910
+176	n06596364	comic book	917
+177	n07579787	plate	923
+178	n07583066	guacamole	924
+179	n07614500	ice cream, icecream	928
+180	n07615774	ice lolly, lolly, lollipop, popsicle	929
+181	n07695742	pretzel	932
+182	n07711569	mashed potato	935
+183	n07715103	cauliflower	938
+184	n07720875	bell pepper	945
+185	n07734744	mushroom	947
+186	n07747607	orange	950
+187	n07749582	lemon	951
+188	n07753592	banana	954
+189	n07768694	pomegranate	957
+190	n07871810	meat loaf, meatloaf	962
+191	n07873807	pizza, pizza pie	963
+192	n07875152	potpie	964
+193	n07920052	espresso	967
+194	n09193705	alp	970
+195	n09246464	cliff, drop, drop-off	972
+196	n09256479	coral reef	973
+197	n09332890	lakeside, lakeshore	975
+198	n09428293	seashore, coast, seacoast, sea-coast	978
+199	n12267677	acorn	988
