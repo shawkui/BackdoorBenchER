@@ -59,6 +59,47 @@ def label_mapping_tiny():
 
     return label_imagenet
 
+
+def label_mapping_imagenette():
+    # step 1: imagenette Label to wnid
+    label_wnid = {
+        0: 'n01440764',
+        1: 'n02102040',
+        2: 'n02979186',
+        3: 'n03000684',
+        4: 'n03028079',
+        5: 'n03394916',
+        6: 'n03417042',
+        7: 'n03425413',
+        8: 'n03445777',
+        9: 'n03888257'
+    }
+        
+    # step 2: wnid to words
+    with open('./dataset/words.txt') as f:
+        lines = f.readlines()
+    lines = [line.strip() for line in lines]
+    wnid_words = {}
+    for line in lines:
+        wnid, words = line.split('\t')
+        wnid_words[wnid] = words
+        
+    # imagenette label to words
+    label_words = {label: wnid_words[label_wnid[label]] for label in range(10)}
+    
+    # step 3: words to imagenet label
+    words_imagenet = {words: i for i, words in enumerate(categories.IMAGENET_CATEGORIES)}
+    
+    # imagenette label to imagenet label, imagenette label => wnid => words => imagenet label
+    label_imagenet = {label: words_imagenet[label_words[label]] for label in range(10)}
+    
+    # write a file to save the mapping, by imagenette lable, wnid, words, imagenet label
+    with open('./dataset/imagenette2imagenet_map.txt', 'w') as f:
+        for label in range(10):
+            f.write(f"{label}\t{label_wnid[label]}\t{label_words[label]}\t{label_imagenet[label]}\n")
+
+    return label_imagenet
+
 def main():
     parser = argparse.ArgumentParser(description=sys.argv[0])
     parser.add_argument('--dataset', type=str, default='tiny_split_5_seed_0', help='which dataset to use')
@@ -87,6 +128,8 @@ def main():
         label_mapping = {i: i for i in range(43)}
     if 'tiny' in args.dataset:
         label_mapping = label_mapping_tiny()
+    if 'imagenette' in args.dataset:
+        label_mapping = label_mapping_imagenette()
 
     config_file = args.config_file
     checkpoint_file = args.ckpt

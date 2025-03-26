@@ -21,6 +21,7 @@ import torch
 import torchvision.transforms as transforms
 from torchvision.datasets import ImageFolder
 from PIL import ImageFilter, Image
+import torchvision
 
 from utils.bd_dataset import xy_iter
 
@@ -43,6 +44,8 @@ def get_num_classes(dataset_name: str) -> int:
         num_classes = 200
     elif dataset_name == 'imagenet':
         num_classes = 1000
+    elif dataset_name == 'imagenette':
+        num_classes = 10
     else:
         raise Exception("Invalid Dataset")
     return num_classes
@@ -81,6 +84,10 @@ def get_input_shape(dataset_name: str) -> Tuple[int, int, int]:
         input_height = 224
         input_width = 224
         input_channel = 3
+    elif dataset_name == 'imagenette':
+        input_height = 160
+        input_width = 160
+        input_channel = 3
     else:
         raise Exception("Invalid Dataset")
     return input_height, input_width, input_channel
@@ -108,6 +115,13 @@ def get_dataset_normalization(dataset_name):
             transforms.Normalize(
                 mean=[0.485, 0.456, 0.406],
                 std=[0.229, 0.224, 0.225],
+            )
+        )
+    elif dataset_name == 'imagenette':
+        dataset_normalization = (
+            transforms.Normalize(
+                mean=[0.461, 0.440, 0.403],
+                std=[0.268, 0.263, 0.279],
             )
         )
     else:
@@ -314,6 +328,17 @@ def dataset_and_transform_generate(args):
                                                           split='val',
                                                           download=True,
                                                           )
+        elif args.dataset == "imagenette":
+            train_dataset_without_transform = torchvision.datasets.Imagenette(args.dataset_path,
+                                                         split='train',
+                                                         download=False,
+                                                         size = "160px"
+                                                         )
+            test_dataset_without_transform = torchvision.datasets.Imagenette(args.dataset_path,
+                                                        split='val',
+                                                        download=False,
+                                                        size = "160px"
+                                                        )
         elif args.dataset == "imagenet":
             from torchvision.datasets import ImageFolder
 
@@ -337,6 +362,8 @@ def dataset_and_transform_generate(args):
                 root=f"{args.dataset_path}/val",
                 is_valid_file=is_valid_file,
             )
+
+            
 
         elif "_split_" in args.dataset:
             from torchvision.datasets import ImageFolder
