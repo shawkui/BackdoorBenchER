@@ -7,6 +7,8 @@
 ---
 
 ## 📢 公告
+**更新于2025-03-26**：根据一些评审者的建议，我们增加了对ImageNette数据集的支持。ImageNette是ImageNet数据集的一个子集，其规模比CIFAR系列、Tiny ImageNet和GTSRB等数据集要大得多。
+
 **更新于 2025-03-04**: 新增基于[MMGen](https://github.com/open-mmlab/mmgeneration)的生成数据支持. 参见MMGen官方指导以训练或下载预训练模型用于数据生成。
 
 **更新于 2025-02-12**：初始版本现已发布。支持对分类为已见（训练）、保留（分割）和OOD（变换）的辅助数据集上的后门净化进行评估。

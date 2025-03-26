@@ -8,6 +8,9 @@
 
 ## 📢 Announcements
 
+**Updated on 2025-03-26**: Based on latest feedback from reviewers, we have added support for the ImageNette dataset. ImageNette is a subset of the ImageNet dataset, featuring a significantly larger size compared to datasets in the CIFAR family, Tiny ImageNet, and GTSRB.
+
+
 **Updated on 2025-03-04**: Now, it supports synthetic dataset based on [MMGen](https://github.com/open-mmlab/mmgeneration). You can follow the guidance from MMGen to train or download the pretrained weight, to generate the synthetic dataset.
 
 **Updated on 2025-02-12**: Initial release now available. It supports the evaluation of backdoor purification on auxiliary datasets categorized as Seen (Train), Reserved (Split), and OOD (Transformations & External from ImageNet).
