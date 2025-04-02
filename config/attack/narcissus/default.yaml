@@ -1,0 +1,7 @@
+attack_label_trans: all2one
+attack_target: 0
+pratio: 0.1
+attack: narcissus
+attack_trigger_npy_path: ./resource/narcissus/resnet18_trigger_cifar10.npy
+attack_train_narcissus_alpha: 1.0
+attack_test_narcissus_alpha: 3.0
