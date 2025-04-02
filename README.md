@@ -8,6 +8,9 @@
 
 ## 📢 Announcements
 
+**Updated on 2025-04-02**: Now, it supports two new clean-label attacks: COMBAT (AAAI 2024) and Narcissus (CCS 2023), and one new data-free defense: OTBR (AAAI 2025).
+
+
 **Updated on 2025-03-26**: Based on latest feedback from reviewers, we have added support for the ImageNette dataset. ImageNette is a subset of the ImageNet dataset, featuring a significantly larger size compared to datasets in the CIFAR family, Tiny ImageNet, and GTSRB.
 
 

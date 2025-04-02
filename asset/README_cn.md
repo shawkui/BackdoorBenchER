@@ -7,6 +7,9 @@
 ---
 
 ## 📢 公告
+**更新于 on 2025-04-02**: 新增两个clean-label攻击方法: COMBAT (AAAI 2024) 和 Narcissus (CCS 2023), 和一个data-free防御方法: OTBR (AAAI 2025).
+
+
 **更新于2025-03-26**：根据一些评审者的建议，我们增加了对ImageNette数据集的支持。ImageNette是ImageNet数据集的一个子集，其规模比CIFAR系列、Tiny ImageNet和GTSRB等数据集要大得多。
 
 **更新于 2025-03-04**: 新增基于[MMGen](https://github.com/open-mmlab/mmgeneration)的生成数据支持. 参见MMGen官方指导以训练或下载预训练模型用于数据生成。
